@@ -2,48 +2,17 @@ body {
     font-family: sans-serif;
 }
 
-.first_heading {
-    color: #1E0E62;
-    margin: px px px px ;
-}
-
-.second_heading {
-    position: absolute;
-    margin: 151px 224px px px ;
-    width: 262.779px;
-    height: 44.911px;
-    opacity: 0.4;
-    color: #1E0E62;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: justify;
-
-}
-
-.third_snippet {
-    position: absolute;
-    margin: 235px 189px 100px 188px ;
-    width: 262.779px;
-    height: 44.911px;
-    opacity: 0.4;
-    color: #1E0E62;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: justify;
-}
-
-.background {
+.background{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 640px;
     height: 380px;
-    background: #fff;
 }
 
 .left_ovel {
     position: absolute;
-    margin: 129px 346px 130px 173px;
+    margin-top: auto;
     width: 121px;
     height: 121px;
     background: #FF0D6A;
@@ -53,7 +22,8 @@ body {
 
 .middle_ovel {
     position: absolute;
-    margin: 129px 269px 130px 250px;
+    margin-top: auto; 
+    margin-left: 8%;
     width: 121px;
     height: 121px;
     background: #0500FF;
@@ -63,10 +33,67 @@ body {
 
 .right_ovel {
     position: absolute;
-    margin: 129px 192px 130px 327px;
+    margin-top: auto;
+    margin-left: 14%;
     width: 121px;
     height: 121px;
     background: #00FFE0;
     filter: blur(75px);
     border-radius: 50%;
+}
+
+.hero_section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.hero_left{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding-left: 15%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_right{
+    width: 50%;
+    height: 100%;
+    padding-right: 15%;
+}
+
+img{
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+}
+
+.first_heading{
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1E0E62;
+    z-index: 1;
+}
+
+.second_heading{
+    position: relative;
+    margin-top: 5px;
+    color: #1E0E62;
+    font-size: 3em;
+    font-weight: 1000;
+    z-index: 1;
+}
+
+.third_snippet {
+    position: relative;
+    margin-top: 20px;
+    opacity: 0.4;
+    color: #1E0E62;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: justify;
+    z-index: 1;
+    line-height: 1.1;
 }
